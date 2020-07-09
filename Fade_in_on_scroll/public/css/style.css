@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100vw;
+}
+
+body {
+    max-width: 100vw;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1,
+header p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4 {
+    max-width: 100vw;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-1 {}
+
+.div-2 {
+    background-color: aqua;
+}
+
+.div-3 {}
+
+.div-4 {
+    background-color: aqua;
+}
+
+.div-2 .card,
+.div-4 .card {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 3px rgba(78, 104, 134, 0.767);
+}
+
+.div-3 .card {
+    height: 400px;
+    width: 400px;
+    box-shadow: 1px 1px 10px 3px rgb(80, 78, 78);
+}
+
+.active {
+    animation-name: example;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+
+.card {
+    opacity: 0;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.visible {
+    opacity: 1;
+}
