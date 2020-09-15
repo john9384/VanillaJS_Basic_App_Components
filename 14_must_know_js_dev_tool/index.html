@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p onClick="makeGreen()">Test String</p>
+    <script>
+      const dogs = [
+        { name: "Snickers", age: 2 },
+        { name: "hugo", age: 8 }
+      ];
+      const p = document.querySelector("p");
+      function makeGreen() {
+        p.style.color = "#BADA55";
+        p.style.fontSize = "50px";
+      }
+
+      // Regular
+      console.log("hello");
+
+      // Interpolated
+      console.log("Hello I am a %s string!", "poop");
+
+      // Styled
+      console.log(
+        "%c this is the variable",
+        "font-size: 50px; background-color: blue;"
+      );
+
+      // Warining
+      console.warn("Oh noo");
+
+      // Error
+      console.error("danger");
+
+      // Info
+      console.info("Crocodiles eat 3-4 people per yera");
+
+      console.assert(p.classList.contains("ouch"), "that is wrong");
+
+      // Clearing();
+      console.clear;
+
+      // View DOM Elements
+      console.log(p);
+      console.dir(p);
+
+      // Grouping  items
+      dogs.forEach(dog => {
+        console.group(`${dog.name}`);
+        console.log("This is ", dog.name);
+        console.log(dog.name, " is ", dog.age, "years");
+        console.groupEnd(`${dog.name}`);
+      });
+
+      // count
+      console.count("western");
+      console.count("western");
+
+      // timing
+      //   console.time("Fetching data");
+      //   fetch(url)
+      //     .then(data => data.json())
+      //     .then(data => {
+      //       console.timeEnd("Fetching data");
+      //       console.log(data);
+      //     });
+
+      // Table
+      console.table(dogs);
+    </script>
+  </body>
+</html>

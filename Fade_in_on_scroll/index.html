@@ -7,7 +7,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="public/js/wow.min.js"></script>
+    <link rel="stylesheet" href="public/css/animate.min.css" />
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
@@ -32,11 +34,16 @@
         <div class="card fade-in"></div>
     </div>
     <div class="div-4">
-        <div class="card fade-in"></div>
-        <div class="card fade-in"></div>
-        <div class="card fade-in"></div>
+        <div class="temp wow fadeIn"></div>
+        <div class="temp wow"></div>
+        <div class="temp wow"></div>
     </div>
-    <script src="/public/js/main.js"></script>
+    <script src="public/js/main.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
