@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Start with strings, numbers and bool
+      //   let age = 10;
+      //   let age2 = age;
+      //   console.log(age, age2);
+      //   age = 20;
+      //   console.log(age, age2);
+
+      //   let name = "Dami";
+      //   let name2 = name;
+      //   console.log(name, name2);
+      //   name = "Damie";
+      //   console.log(name, name2);
+
+      // Trying with an array
+      //   const players = ["Dami", "Lola", "John", "Damie"];
+      //   const players2 = players;
+      //   console.log(players, players2);
+      //   players[0] = "Johnny";
+      //   console.log(players, players2);
+      //   // arrays refrences the original
+      //   const teams = players.slice();
+      //   console.log(players, teams);
+      //   teams[3] = "Lux";
+      //   players[0] = "Dami";
+      //   console.log(players, teams);
+      //   using concat
+      //   const teams2 = [].concat(players)
+      //   using spread opertor
+      //   const teams3 =  [...players]
+
+      // Trying With Objects
+      //   const person = {
+      //     name: "Damie",
+      //     age: 22
+      //   };
+
+      //   const captain = person;
+      //   captain.number = 99;
+      //   console.log(person);
+
+      //   // object makes referenct as well
+      //   const cap2 = Object.assign({}, person, { number: 99, vip: 1 });
+      //   console.log(cap2);
+
+      //   // object spread
+      //   const cap3 = { ...person };
+      //   cap3.vip = 5;
+      //   console.log(cap3);
+
+      //   // Object copy is just one level deep meaning in the example below social will not be cloned it will still be referenced
+      //   const dami = {
+      //     name: "Dami",
+      //     age: 100,
+      //     social: {
+      //       twitter: "@jon_d"
+      //     }
+      //   };
+
+      //   console.clear();
+      //   console.log(dami);
+
+      //    const dev = Object.assign({}, dami);
+      //  // const dev = { ...dami };
+      //   dev.name = "Damilola";
+      //   dev.social.twitter = "@jon_dami";
+
+      //   console.log(dami);
+      //   console.log(dev);
+
+      // A form of cheat to go deeper
+      //   const dev2 = JSON.parse(JSON.stringify(dami));
+    </script>
+  </body>
+</html>
